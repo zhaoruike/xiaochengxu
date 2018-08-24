@@ -1,0 +1,16 @@
+<scroll-view 
+scroll-x
+scroll-with-animation=true
+scroll-left="{{left}}"
+class="bar-box"
+>
+  
+    <view id="{{'barItem'+index}}" class=" scroll-bar-item {{item.action}}" style="width:{{width}}"
+    data-index="{{index}}" 
+    wx:for="{{barList}}"
+    bindtap="_callback" 
+    wx:key="{{index}}">
+    {{item.text}}
+    </view>
+  
+</scroll-view>

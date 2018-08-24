@@ -35,7 +35,7 @@ Component({
    */
   data: {
     // 弹窗显示控制
-    isShow:false
+    isShow:true
   },
 
   /**
@@ -50,13 +50,13 @@ Component({
     //隐藏弹框
     hideDialog(){
       this.setData({
-        isShow: !this.data.isShow
+        isShow: true
       })
     },
     //展示弹框
     showDialog(){
       this.setData({
-        isShow: !this.data.isShow
+        isShow: false
       })
     },
      /*

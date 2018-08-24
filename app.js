@@ -5,6 +5,23 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    this.screenWidth = wx.getSystemInfoSync().windowWidth
+  },
+  onShow: function (options) {
+  },
+  onHide: function () {
+    // Do something when hide.
+  },
+  onError: function (msg) {
+  },
+  onPageNotFound: function(res){
+    // wx.redirectTo({
+    //   url: 'pages/logs/log'
+    // }) 
+    // 如果是 tabbar 页面，请使用 wx.switchTab
+    wx.switchTab({
+      url: 'pages/logs/logs',
+    })
   },
   getUserInfo:function(cb){
     var that = this
@@ -26,5 +43,6 @@ App({
   },
   globalData:{
     userInfo:null
-  }
+  },
+  screenWidth:0
 })

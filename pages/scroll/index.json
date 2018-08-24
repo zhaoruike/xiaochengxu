@@ -1,0 +1,11 @@
+{
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTitleText": "滚动",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "scroll-bar": "/components/scrollBar/index"
+  }
+}

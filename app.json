@@ -1,12 +1,50 @@
 {
   "pages":[
+    "pages/scroll/index",
     "pages/index/index",
+    "pages/logs/log",
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#ccc",
-    "navigationBarTitleText": "爱票站",
-    "navigationBarTextStyle":"black"
-  }
+    "backgroundTextStyle":"drak",
+    "enablePullDownRefresh":true,
+    "navigationBarBackgroundColor":"#000000",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText":"爱票站"
+  },
+  "networkTimeout":{
+    "request":"60000",
+    "connectSocket":"60000",
+    "uploadFile":"60000",
+    "downloadFile":"60000"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "position": "bottom",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/3.jpg",
+        "iconPath": "images/1.jpg",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/2.jpg",
+        "iconPath": "images/2.jpg",
+        "pagePath": "pages/logs/log",
+        "text": "一元投"
+      },
+      {
+        "selectedIconPath": "images/1.jpg",
+        "iconPath": "images/3.jpg",
+        "pagePath": "pages/scroll/index",
+        "text": "滑动"
+      }
+    ]
+  },
+  "debug":true,
+  "functionalPages":true
 }
